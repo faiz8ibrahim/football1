@@ -223,68 +223,74 @@ a:hover{
     font-size: 12px;
 }
         @media (max-width: 768px) {
-            .principal {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            ul li {
-                margin: 5px 0;
-            }
-
-            .ftf {
-                grid-template-columns: 1fr 1fr; /* 2 columns on smaller screens */
-                gap: 20px;
-            }
-
-            .d1 {
-                width: 100%; /* full width for each image on small screens */
-            }
-
-            footer {
-                font-size: 12px;
-                padding: 10px 0;
-            }
-
-            .footer-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer-container div {
-                max-width: 100%;
-                margin: 10px 0;
-            }
+        .principal {
+            flex-direction: column;
+            text-align: center;
         }
 
-        @media (max-width: 480px) {
-            .logo a {
-                font-size: 1.5rem;
-                padding: 8px 15px;
-            }
-
-            .ftf {
-                grid-template-columns: 1fr; /* 1 column on very small screens */
-                gap: 10px;
-            }
-
-            .d1 {
-                width: 100%; /* full width for images */
-            }
-
-            .footer-container h3 {
-                font-size: 16px;
-            }
-
-            .footer-bottom {
-                font-size: 10px;
-            }
+        ul {
+            flex-direction: column;
+            align-items: center;
         }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        .ftf {
+            grid-template-columns: 1fr 1fr; /* 2 columns on tablets */
+            gap: 10px;
+        }
+
+        .d1 {
+            width: 100%; /* Full width on mobile/tablets */
+            max-width: 200px; /* Smaller max-width on smaller devices */
+        }
+
+        .d1 img {
+            object-fit: cover; /* Make sure images fit the container */
+        }
+
+        footer {
+            font-size: 12px;
+            padding: 10px 0;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-container div {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .logo a {
+            font-size: 1.5rem;
+            padding: 8px 15px;
+        }
+
+        .ftf {
+            grid-template-columns: 1fr; /* 1 column on very small screens */
+            gap: 5px;
+        }
+
+        .d1 {
+            width: 90%; /* Ensure divs fit well on small screens */
+            max-width: 200px; /* Limit max-width further */
+        }
+
+        .footer-container h3 {
+            font-size: 16px;
+        }
+
+        .footer-bottom {
+            font-size: 10px;
+        }
+    }
     </STYLE>
 </head>
 <body>
