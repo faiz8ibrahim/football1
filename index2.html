@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pour inscrire complete le tableau suivant</title>
+  <link rel="stylesheet" href="./CSS/style2.css">
+</head>
+<body>
+  <header>
+    <div class="principal">
+      <div class="logo">
+        <a href="#">SporTing<span>F</span></a>
+      </div>
+      <ul>
+        <li class="Active"><a href="index.html">Accueil</a></li>
+        <li><a href="info.html">Informations</a></li>
+        <li><a href="index4.html">Activites</a></li>
+        <li><a href="index2.html">Inscription</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="form-container">
+    <form class="inscription-form" action="#" method="POST">
+      <h1>Pour s'inscrire complète le tableau suivant</h1>
+
+      <!-- Name Input -->
+      <div class="form-group">
+        <label for="name">Nom complet:</label>
+        <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+      </div>
+
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="email">Gmail:</label>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+      </div>
+
+      <!-- Password Input -->
+      <div class="form-group">
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+      </div>
+
+      <!-- Confirm Password Input -->
+      <div class="form-group">
+        <label for="confirm-password">Confirmez le mot de passe:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button class="button" type="submit">S'inscrire</button>
+    </form>
+  </div>
+
+  <script src="js/prg.js"></script>
+</body>
+</html>
