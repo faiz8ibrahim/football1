@@ -5,6 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pour inscrire complete le tableau suivant</title>
   <link rel="stylesheet" href="./CSS/style2.css">
+  <STYLE>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMAGES/background_v8_s22.jpg);
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
+.logo a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  display: block;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 70%);
+}
+
+.logo span {
+  color: red;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+  border-radius: 20px;
+}
+
+ul li.Active a {
+  background-color: #fff;
+  color: #000;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group input {
+  border-radius: 15px;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(31, 239, 167);
+  margin: 10px;
+}
+
+button.button {
+  background-color: rgb(110, 255, 205);
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.button:hover {
+  background-color: rgb(31, 239, 167);
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(31, 239, 167, 0.6);
+}
+
+.form-group input:focus {
+  border-bottom: 2px solid rgb(31, 189, 239);
+  transition: border-bottom 0.3s ease-in-out;
+  background-color: rgba(31, 239, 167, 0.1);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form.inscription-form {
+  background-color: rgb(210, 238, 228);
+  width: 551px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+  </STYLE>
 </head>
 <body>
   <header>
