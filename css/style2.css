@@ -60,6 +60,7 @@ button.button:hover {
 form.inscription-form {
   background-color: rgb(210, 238, 228);
   width: 551px;
+  max-width: 95%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
