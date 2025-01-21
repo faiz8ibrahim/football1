@@ -1,0 +1,12 @@
+@import url(general.css);
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin:  auto;
+    width:100%
+}
+

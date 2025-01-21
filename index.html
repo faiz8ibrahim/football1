@@ -4,256 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>association</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Century Gothic', Arial, sans-serif;
-}
-
-body {background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background_v8_s22.jpg');
-}
-/* header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMAGES/background_v8_s22.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-color: #000; Fallback color if the image fails to load 
-} */
-
-header {
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    transition: .4s ease;
-}
-
-header.sticky {
-    background-color: #00000070;
-}
-
-/* .logo a {
-    color: #fff;
-    border: 1px solid #fff;
-    position: absolute; 
-    padding: 10px 20px;
-    left: 10px;
-    top: 10px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-} */
-
-
-.logo a {
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    display: block;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 70%);
-}
-
-.logo span {
-    color: red;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    margin-top: 20px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 10px;
-    font-weight: 500;
-    text-transform: uppercase;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-}
-
-ul li a:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: #fff;
-    border-radius: 20px;
-}
-
-ul li.Active a {
-    background-color: #fff;
-    color: #000;
-}
-
-/* .principal {
-    max-width: 1440px;
-    margin: 0 auto;
-} */
-
-
-.principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* .titre {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-} */
-.content {
-    height: 80vh;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.titre {
-    text-align: center;
-}
-
-
-
-.titre h1 {
-    color: #fff;
-    font-size: 70px;
-}
-
-.button {
-    /* position: absolute;
-    left: 50%;
-    top: 65%;
-    transform: translate(-50%, -50%); */
-    text-align: center;
-}
-
-.button a {
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    margin: 10px;
-    display: inline-block;
-    background: transparent;
-    transition: all 0.4s ease;
-}
-
-.button a:hover {
-    background-color: #fff;
-    color: #000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-}
-
-@media (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 20px;
-    }
-
-    ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    ul li {
-        margin: 5px 0;
-    }
-
-    .titre h1 {
-        font-size: 50px;
-    }
-
-    .button {
-        top: 70%;
-    }
-}
-
-footer {
-    /* background-color: #aaa4c9; */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    HEIGHT: 20VH;
-}
-
-.footer-container {
-    
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.footer-container div {
-    max-width: 300px;
-    margin: 10px 0;
-}
-
-.footer-container h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #aaa4c9;
-}
-
-.footer-container p,
-.footer-container ul {
-    line-height: 1.6;
-}
-
-.footer-container ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-container ul li {
-    margin: 5px 0;
-}
-
-.footer-container ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-container ul li a:hover {
-    color: #000000;
-}
-
-.footer-bottom {
-    background-color: #000;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 12px;
-}
-    </style>
 </head>
 <body>
     <header>
-        <div class="principal">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
             <div class="logo">
                 <a href="index.html">SporTing <span>F</span></a>
             </div>
-            
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
             <!-- Navbar Toggler Button for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -262,23 +23,21 @@ footer {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto"> <!-- ms-auto pushes the items to the right -->
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="index.html">Accueil</a>
+                        <a class="nav-link text-white p-2" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="info.html">Informations</a>
+                        <a class="nav-link text-white p-2" href="info.html">Informations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index4.html">Activites</a>
+                        <a class="nav-link text-white p-2" href="index4.html">Activites</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index2.html">Inscription</a>
+                        <a class="nav-link text-white p-2" href="index2.html">Inscription</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-        </div>
-
     </header>
     <div class="content">
         <div class="titre">
@@ -300,9 +59,6 @@ footer {
 
 <!-- Add Font Awesome for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-<script src="js/prg.js"></script>
     
 </body>
 </html>

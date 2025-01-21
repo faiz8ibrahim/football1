@@ -1,0 +1,19 @@
+@import url(general.css);
+.container.mt-5 {
+    animation: fadeSlideIn 1.2s ease-out;
+    opacity: 0; /* Début de l'animation invisible */
+    animation-fill-mode: forwards; /* Conserver l'état final après l'animation */
+  }
+  
+  /* Animation pour l'apparition avec glissement */
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Déplace vers le bas */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Retour à la position originale */
+    }
+  }
+  
