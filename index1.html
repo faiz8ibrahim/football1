@@ -6,22 +6,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/style1.css">
     <STYLE>
-        * {
+   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Century Gothic', Arial, sans-serif;
 }
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background_v8_s22.jpg');
-    
-} 
 
-header {
+body {background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMAGES/background_v8_s22.jpg);
+}
+/* header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMAGES/background_v8_s22.jpg);
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    background-color: transparent
+    background-color: #000; Fallback color if the image fails to load 
+} */
+
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: .4s ease;
 }
+
+header.sticky {
+    background-color: #00000070;
+}
+
+/* .logo a {
+    color: #fff;
+    border: 1px solid #fff;
+    position: absolute; 
+    padding: 10px 20px;
+    left: 10px;
+    top: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+} */
+
+
 .logo a {
     color: #fff;
     border: 1px solid #fff;
@@ -32,7 +60,6 @@ header {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 70%);
 }
-
 
 .logo span {
     color: red;
@@ -79,6 +106,7 @@ ul li.Active a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .ftf {
     display: grid
