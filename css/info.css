@@ -17,3 +17,7 @@
     }
   }
   
+
+@media (max-width : 800px) {
+  .cards-items {gap: 20px;}
+}
